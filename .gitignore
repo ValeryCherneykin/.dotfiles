@@ -1,0 +1,48 @@
+# Swap files
+*.swp
+*.swo
+
+# Backup files
+*.bak
+*.tmp
+*.old
+
+# Session files
+*.session
+
+# Undodir files
+*.un~
+
+# Logs
+*.log
+
+# Neovim directories
+.netrwhist
+.viminfo
+shada/*
+shada_*
+
+# Plugin manager directories (packer, lazy.nvim, etc.)
+site/*
+pack/*
+plugin/*
+plugged/*
+lazy/*
+
+# Language server protocol (LSP) data
+.lsp
+lsp_log.txt
+
+# Node.js (if using any plugins requiring npm)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python virtual environment (if used)
+venv/
+__pycache__/
+*.py[cod]
+
+# Temporary files
+*.DS_Store
+Thumbs.db
