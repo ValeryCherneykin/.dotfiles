@@ -54,7 +54,6 @@ Thumbs.db
 *.dmg
 
 # Tmux
-.tmux.conf
 .tmux/*
 *.tmux
 
