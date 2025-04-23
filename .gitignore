@@ -38,11 +38,6 @@ node_modules/
 package-lock.json
 yarn.lock
 
-# Python virtual environment (if used)
-venv/
-__pycache__/
-*.py[cod]
-
 # Temporary files
 *.DS_Store
 Thumbs.db
@@ -50,3 +45,24 @@ Thumbs.db
 # Zsh/bash history
 .zsh_history
 .bash_history
+
+# Brew
+*.brew
+*.tar.gz
+*.zip
+*.xz
+*.dmg
+
+# Tmux
+.tmux.conf
+.tmux/*
+*.tmux
+
+# Docker
+*.docker
+.docker/
+docker-compose.override.yml
+docker-compose.yml
+**/Dockerfile*
+**/docker-compose.yml
+docker-compose.*
