@@ -46,3 +46,7 @@ __pycache__/
 # Temporary files
 *.DS_Store
 Thumbs.db
+
+# Zsh/bash history
+.zsh_history
+.bash_history
