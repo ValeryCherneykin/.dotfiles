@@ -1,11 +1,10 @@
 local wezterm = require("wezterm")
 
 return {
-    color_scheme = "Kanagawa (Gogh)",
+    color_scheme = "Catppuccin Mocha",
 
     font = wezterm.font_with_fallback({
-        { family = "Iosevka Nerd Font Mono", weight = "Regular" },
-        "JetBrainsMono Nerd Font",
+        { family = "FiraCode Nerd Font", weight = "Regular" },
         "Symbols Nerd Font Mono",
         "Noto Color Emoji",
     }),
@@ -24,8 +23,8 @@ return {
     --     brightness = 0.8,
     -- },
 
-    window_background_opacity = 0.4,
-    text_background_opacity = 0.8,
+    window_background_opacity = 0.9,
+    text_background_opacity = 1.0,
 
     enable_tab_bar = false,
     enable_scroll_bar = false,
