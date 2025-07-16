@@ -1,10 +1,15 @@
 local wezterm = require("wezterm")
 
 return {
-    color_scheme = "Tokyo Night",
+    color_scheme = "Kanagawa (Gogh)",
 
-    font = wezterm.font("JetBrains Mono", { weight = "Regular" }),
-    font_size = 14,
+    font = wezterm.font_with_fallback({
+        { family = "Iosevka Nerd Font Mono", weight = "Regular" },
+        "JetBrainsMono Nerd Font",
+        "Symbols Nerd Font Mono",
+        "Noto Color Emoji",
+    }),
+    font_size = 14.5,
     freetype_load_target = "Light",
     freetype_render_target = "HorizontalLcd",
 
@@ -12,15 +17,15 @@ return {
     max_fps = 60,
     animation_fps = 1,
 
-    -- window_background_image = "/path/",
+    -- window_background_image = "/path/image",
     -- window_background_image_hsb = {
     --     hue = 1.0,
-    --     saturation = 0.5,
-    --     brightness = 0.1,
+    --     saturation = 1,
+    --     brightness = 0.8,
     -- },
 
-    window_background_opacity = 1.0,
-    text_background_opacity = 1.0,
+    window_background_opacity = 0.4,
+    text_background_opacity = 0.8,
 
     enable_tab_bar = false,
     enable_scroll_bar = false,
@@ -40,5 +45,8 @@ return {
                 args = { "/bin/zsh", "-i", "-l", "~/bin/dev.sh" },
             },
         },
-    }
+    },
+
+    default_cursor_style = "BlinkingBlock",
+    cursor_blink_rate = 500,
 }
