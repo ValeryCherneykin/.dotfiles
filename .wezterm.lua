@@ -1,16 +1,16 @@
 local wezterm = require("wezterm")
 
 return {
-    color_scheme = "rose-pine-moon",
-
+    color_scheme = "Tokyo Night Storm",
     font = wezterm.font_with_fallback({
-        { family = "FiraCode Nerd Font", weight = "Regular" },
+        { family = "JetBrainsMono Nerd Font", weight = "Regular" },
         "Symbols Nerd Font Mono",
         "Noto Color Emoji",
     }),
-    font_size = 14.5,
+    font_size = 14.0,
     freetype_load_target = "Light",
     freetype_render_target = "HorizontalLcd",
+
 
     front_end = "WebGpu",
     max_fps = 60,
@@ -23,7 +23,7 @@ return {
     --     brightness = 0.8,
     -- },
 
-    window_background_opacity = 0.9,
+    window_background_opacity = 0.92,
     text_background_opacity = 1.0,
 
     enable_tab_bar = false,
